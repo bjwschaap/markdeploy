@@ -35,7 +35,7 @@ type deployment struct {
 func main() {
 	app := cli.NewApp()
 	app.Name = "markdeploy"
-	app.Version = "0.0.2"
+	app.Version = "0.0.3"
 	app.Author = "Bastiaan Schaap"
 	app.Email = "bastiaan@gntry.io"
 	app.Usage = "Send deployment marker to logstash"
@@ -140,6 +140,10 @@ func run(c *cli.Context) error {
 		return err
 	}
 
+	if !c.GlobalBool("silent") {
+		fmt.Printf("%s\n", string(msg))
+	}
+
 	err = l.Writeln(msg)
 	if err != nil {
 		return err
@@ -178,5 +182,6 @@ func getDeployment(c *cli.Context) deployment {
 		},
 		Reason: c.GlobalString("reason"),
 		Client: c.GlobalString("client"),
+		Hosts: c.GlobalStringSlice("target"),
 	}
 }
