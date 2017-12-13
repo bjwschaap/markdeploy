@@ -29,6 +29,7 @@ type deployment struct {
 	Reason      string        `json:"reason"`
 	Client      string        `json:"client"`
 	Environment string		  `json:"environment"`
+	Hosts       []string      `json:"hosts"`
 }
 
 func main() {
@@ -64,7 +65,7 @@ func main() {
 			EnvVar: "LOGSTASH_PORT",
 		},
 		cli.IntFlag{
-			Name: "t, timeout",
+			Name: "timeout",
 			Value: 5,
 			Usage: "tcp timeout",
 			EnvVar: "LOGSTASH_TIMEOUT",
@@ -100,6 +101,10 @@ func main() {
 			Name: "e, env, environment",
 			Usage: "the environment the application is deployed to",
 			EnvVar: "MARKDEPLOY_ENV",
+		},
+		cli.StringSliceFlag{
+			Name: "t, target",
+			Usage: "one or more hosts that the application was deployed to",
 		},
 	}
 
@@ -165,6 +170,9 @@ func validate(c *cli.Context) error {
 	}
 	if c.GlobalString("environment") == "" {
 		return fmt.Errorf("can't mark a deployment without an environment")
+	}
+	if len(c.GlobalStringSlice("target")) == 0 {
+		return fmt.Errorf("can't mark a deployment without at least 1 host")
 	}
 	return nil
 }
