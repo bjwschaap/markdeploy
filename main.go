@@ -28,12 +28,13 @@ type deployment struct {
 	Application application   `json:"application"`
 	Reason      string        `json:"reason"`
 	Client      string        `json:"client"`
+	Environment string		  `json:"environment"`
 }
 
 func main() {
 	app := cli.NewApp()
 	app.Name = "markdeploy"
-	app.Version = "0.0.1"
+	app.Version = "0.0.2"
 	app.Author = "Bastiaan Schaap"
 	app.Email = "bastiaan@gntry.io"
 	app.Usage = "Send deployment marker to logstash"
@@ -94,6 +95,11 @@ func main() {
 			Name: "s, silent",
 			Usage: "supress all output",
 			EnvVar: "MARKDEPLOY_SILENT",
+		},
+		cli.StringFlag{
+			Name: "e, env, environment",
+			Usage: "the environment the application is deployed to",
+			EnvVar: "MARKDEPLOY_ENV",
 		},
 	}
 
@@ -156,6 +162,9 @@ func validate(c *cli.Context) error {
 	}
 	if c.GlobalString("appversion") == "" {
 		return fmt.Errorf("can't mark a deployment without the application version")
+	}
+	if c.GlobalString("environment") == "" {
+		return fmt.Errorf("can't mark a deployment without an environment")
 	}
 	return nil
 }

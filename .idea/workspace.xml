@@ -2,62 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57cb7cff-9c6a-498b-8c96-912b75ce0798" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/markdeploy.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Gopkg.lock" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Gopkg.toml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Makefile" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/logstash/logstash.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/urfave/cli/.flake8" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/urfave/cli/.gitignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/urfave/cli/.travis.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/urfave/cli/CHANGELOG.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/urfave/cli/LICENSE" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/urfave/cli/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/urfave/cli/altsrc/altsrc.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/urfave/cli/altsrc/flag.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/urfave/cli/altsrc/flag_generated.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/urfave/cli/altsrc/flag_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/urfave/cli/altsrc/helpers_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/urfave/cli/altsrc/input_source_context.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/urfave/cli/altsrc/map_input_source.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/urfave/cli/altsrc/toml_command_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/urfave/cli/altsrc/toml_file_loader.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/urfave/cli/altsrc/yaml_command_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/urfave/cli/altsrc/yaml_file_loader.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/urfave/cli/app.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/urfave/cli/app_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/urfave/cli/appveyor.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/urfave/cli/autocomplete/bash_autocomplete" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/urfave/cli/autocomplete/zsh_autocomplete" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/urfave/cli/category.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/urfave/cli/cli.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/urfave/cli/command.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/urfave/cli/command_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/urfave/cli/context.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/urfave/cli/context_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/urfave/cli/errors.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/urfave/cli/errors_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/urfave/cli/flag-types.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/urfave/cli/flag.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/urfave/cli/flag_generated.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/urfave/cli/flag_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/urfave/cli/funcs.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/urfave/cli/generate-flag-types" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/urfave/cli/help.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/urfave/cli/help_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/urfave/cli/helpers_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/urfave/cli/helpers_unix_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/urfave/cli/helpers_windows_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/urfave/cli/runtests" />
+      <change beforePath="$PROJECT_DIR$/main.go" afterPath="$PROJECT_DIR$/main.go" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -77,8 +22,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/logstash/logstash.go" />
-        <option value="$PROJECT_DIR$/main.go" />
         <option value="$PROJECT_DIR$/Makefile" />
+        <option value="$PROJECT_DIR$/main.go" />
       </list>
     </option>
   </component>
@@ -188,7 +133,7 @@
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -226,9 +171,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#14#132#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -250,11 +193,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="28" column="45" lean-forward="false" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
-          <folding>
-            <element signature="e#14#132#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="435">
+          <caret line="170" column="0" lean-forward="true" selection-start-line="170" selection-start-column="0" selection-end-line="170" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
