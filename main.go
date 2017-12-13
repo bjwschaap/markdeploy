@@ -146,16 +146,7 @@ func run(c *cli.Context) error {
 	}
 
 	if !c.GlobalBool("silent") {
-		fmt.Println("Deployment marked, disconnecting...")
-	}
-
-	err = l.Disconnect()
-	if err != nil {
-		return err
-	}
-
-	if !c.GlobalBool("silent") {
-		fmt.Println("Done")
+		fmt.Println("Deployment marked succesfully")
 	}
 
 	return nil

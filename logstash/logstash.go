@@ -59,13 +59,6 @@ func (l *Logstash) Connect() (*net.TCPConn, error) {
 	return connection, err
 }
 
-func (l *Logstash) Disconnect() error {
-	if l.Connection != nil {
-		return l.Connection.Close()
-	}
-	return nil
-}
-
 func (l *Logstash) Writeln(message []byte) (error) {
 	var err = errors.New("tcp connection is nil")
 	message = append(message, '\n')
