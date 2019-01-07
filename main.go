@@ -182,6 +182,7 @@ func getDeployment(c *cli.Context) deployment {
 		},
 		Reason: c.GlobalString("reason"),
 		Client: c.GlobalString("client"),
+		Environment: c.GlobalString("environment"),
 		Hosts: c.GlobalStringSlice("target"),
 	}
 }
